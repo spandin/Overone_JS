@@ -1,5 +1,3 @@
-// learning
-
 let myName = 'Stanislau';
 let userName = myName;
 
