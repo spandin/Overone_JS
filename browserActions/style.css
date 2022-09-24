@@ -1,0 +1,19 @@
+header {
+    height: 100vh;
+    background-color: crimson;
+}
+
+.first-block {
+    background-color: azure;
+    height: 100vh;
+}
+.second-block {
+    background-color: bisque;
+    height: 100vh;
+}
+
+.see-more {
+    margin: 30px 0px;
+   display: flex;
+   justify-content: center;
+}
