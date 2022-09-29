@@ -1,0 +1,16 @@
+.get-info {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.get-info__f-s-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.get-info__abountyou {
+    display: flex;
+    flex-direction: column;
+}
