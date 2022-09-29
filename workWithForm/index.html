@@ -23,14 +23,16 @@
     <div class="get-info__marital-status">
       <label for="marital-status">Семейное положение:</label>
       <select name="marital">
-        <option value="yes" name="status" selected>В браке</option>
-        <option checked value="no" name="status">Одинок</option>
+        <option value="В браке" name="status" selected>В браке</option>
+        <option checked value="Одинок" name="status">Одинок</option>
       </select>
     </div>
     <div class="get-info__drags">
       <label for="drags">Употребляете наркотики?</label>
-      <input type="radio" name="drags" id="">
-      <input type="radio" name="drags" id="" checked>
+      <label for="drags-yes">Да</label>
+      <input type="radio" name="drags" id="drags-yes" value="Да">
+      <label for="drags-no">Нет</label>
+      <input type="radio" name="drags" id="drags-no" value="Нет" checked>
     </div>
     <div class="get-info__confirmation">
       <label for="confirmation">Подтвердите согласие на обработку персональных данных</label>
