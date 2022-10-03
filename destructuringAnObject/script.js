@@ -1,37 +1,23 @@
-1.
+const canada = {
+    name: {
+      common: "Canada",
+      official: "Canada"
+    },
+    region: "Americas",
+    subregion: "North America",
+    languages: ["English", "French"],
+    continents: ["North America"],
+    flags: {
+      png: "https://flagcdn.com/w320/ca.png"
+    }
+}
 
-const food = ['cherry', 'melon', 'pear', 'apple', 'kiwi', 'raspberry', 'grapes']
+const { flags: {png}, name: {common}, captila = 'Ottawa', languages: [firstLang, secondLang],
+currencies = 'CAD' } = canada
 
-const [a, b, , c, d] = food
+document.querySelector('img').src = `${png}`
+document.querySelector('.info__conuntry').innerHTML += `${common}`
+document.querySelector('.info__capital').innerHTML += `${captila}`
+document.querySelector('.other-info__languages').innerHTML += `Languages: ${firstLang}, ${secondLang}`
+document.querySelector('.other-info__currencies').innerHTML += `Currencies: ${currencies}`
 
-console.log(a);
-
-console.log(b);
-
-console.log(c);
-
-console.log(d);
-
-2.
-
-const years = [2000, 2004, 2006]
-
-const [a, b, c] = years
-
-console.log(a);
-
-console.log(b);
-
-console.log(c);
-
-3.
-
-const country = ['Belgium', 'Cuba', ['Latvia', 'Peru', 'Portugal']]
-
-const [ , , [a, b, c]] = country
-
-console.log(a);
-
-console.log(b);
-
-console.log(c);
