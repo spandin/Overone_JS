@@ -1,21 +1,14 @@
-const country = ['Peru', 'Portugal', 'Sweden', 'Austria']
+const country = [ 'Cuba','Peru', 'Latvia', 'Portugal', 'Belgium', 'Sweden', 'Austria']
 
-const newCountry = [...country]
-console.log(newCountry);
+1.
+const [country1, country2, ...other] = country
+console.log(other);
 
-const str = 'React'
-
-const arrStr = [...str]
-console.log(arrStr);
-
-// 3. Напишите функцию orderFood, которая в качестве параметров ожидает адрес, время, имя получателя и заказ. 
-// При вызове функции необходимо передавать массив с данными значениями. 
-// Сделайте так, чтобы при получении параметров данный массив был развёрнут.
-
-const order = ['Минск ул.Ленина д.54', '12:23', 'Stanislau', 'Pizza']
-
-function orderFood(ind1, ind2, ind3, ind4) {
-  document.body.innerHTML += `Адрес: ${ind1}, Время: ${ind2}, Заказчик: ${ind3}, Заказ: ${ind4}. `;
+2.
+function sum(...a) {
+return a.reduce((a, b) => a + b )
 }
 
-orderFood(...order)
+console.log(sum(25, 25));
+console.log(sum(0, 11, 56));
+console.log(sum(23, 967, 23, 2));
